@@ -1,0 +1,55 @@
+* {
+  margin: initial;
+  padding: initial;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $color-dark;
+  font-family: $Gilroy;
+  color: $color-light;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $Merriweather;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 120px;
+  line-height: 156px;
+}
+
+p {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 1;
+  width: 260px;
+  height: 62px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #DA8023 0%, #E2B438 100%);
+  &:hover {
+  background: linear-gradient(135deg, #ac6115 0%, #9e7a19 100%);
+    
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.main {
+  overflow: hidden;
+  background: url(@/images/bg.png) top center;
+}

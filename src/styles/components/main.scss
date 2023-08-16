@@ -1,0 +1,29 @@
+.main-content {
+	padding: 100px 0 200px;
+	.container {
+		position: relative;
+	}
+}
+
+.main-info {
+	max-width: 610px;
+	.main-small-info {
+		display: inline-flex;
+		align-items: center;
+		padding: 12px 16px;
+		font-size: 18px;
+		line-height: 1;
+		background-color: $color-red;
+		border-radius: 46px;
+	}
+
+	> *:not(span) + * {
+		margin-top: 56px;
+	}
+}
+
+.main-image {
+	position: absolute;
+	top: -123px;
+	left: calc(100% - 991px);
+}
