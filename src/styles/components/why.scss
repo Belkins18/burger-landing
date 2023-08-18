@@ -1,0 +1,33 @@
+.why {
+	background: url(@/images/whybg.png) top center;
+	padding-bottom: 180px;
+	&__title {
+		text-align: center;
+	}
+
+	* + .why-list {
+		margin-top: 60px;
+	}
+}
+
+.why-list {
+	display: flex;
+	justify-content: center;
+	gap: 100px;
+	&__item {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-self: center;
+		gap: 24px;
+		width: 312px;
+	}
+	&__title {
+		@extend p
+	}
+	&__text {
+		text-align: center;
+		font-size: 16px;
+		line-height: 22px;
+	}
+}

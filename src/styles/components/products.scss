@@ -1,0 +1,66 @@
+.products {
+	background: url(@/images/burgers_bg.png) top center / 1400px;
+	padding-bottom: 180px;
+	&__title {
+		text-align: center;
+	}
+	* + &__list {
+		margin-top: 60px;
+	}
+}
+
+.card-list {
+	display: grid;
+	grid-template-columns: repeat(3, 384px);
+	gap: 24px;
+	&__item {
+		display: flex;
+		flex-direction: column;
+		gap: 24px;
+		border-radius: 16px;
+		border: 1px solid $color-dark-grey;
+		background: $color-cards;
+		padding: 30px;
+		transition: 0.4s ease all;
+		&:hover {
+			border: 1px solid #DA8023;
+		}
+	}
+	&__image {
+		height: 250px;
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+	}
+	&__title {
+		@extend p
+	}
+	&__desc {
+		line-height: 22px;
+	}
+}
+
+.card-extra {
+	display: flex;
+	justify-content: space-between;
+	&__info {
+		display: flex;
+		flex-direction: column;
+		gap: 8px;
+	}
+	&__price {
+		font-size: 32px;
+		line-height: 39px;
+	}
+	&__weight {
+		color: $color-grey;
+		line-height: 19px;
+	}
+	&__action {
+		width: 182px;
+	}
+	&__button {
+		gap: 10px;
+	}
+}
