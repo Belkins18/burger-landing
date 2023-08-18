@@ -42,13 +42,10 @@ module.exports = merge(common, {
     new CopyPlugin({
       patterns: [
         { 
-          from: "src/images/*.*",
-          to({ context, absoluteFilename }) {
-            console.log({
-              context,
-              absoluteFilename
-            })
-            return Promise.resolve("assets/images/[name][ext]");
+          from: "src/images/",
+          to({ _context, absoluteFilename }) {
+            const imagePath = absoluteFilename.split('images/')[1]?.split('/')
+            return Promise.resolve('assets/images/' + imagePath.splice(0, imagePath.length - 1).join('/') + '/[name][ext]');
           },
         }
       ],
