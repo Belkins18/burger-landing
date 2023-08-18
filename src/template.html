@@ -43,18 +43,18 @@
         <nav class="menu">
           <ul class="menu-list">
             <li class="menu-item">
-              <a href="#">Почему у нас</a>
+              <a href="#why">Почему у нас</a>
             </li>
             <li class="menu-item">
-              <a href="#">Меню бургеров</a>
+              <a href="#products">Меню бургеров</a>
             </li>
             <li class="menu-item">
-              <a href="#">Меню бургеров</a>
+              <a href="#order">Оформление заказа</a>
             </li>
           </ul>
         </nav>
 
-        <div class="currency" title="Change currency">$</div>
+        <div class="currency" title="Change currency" id="changeCurrencyBtn">$</div>
       </div>
     </header>
 
@@ -66,7 +66,7 @@
           <p class="main-text">Мы обновили наше меню, спешите попробовать сезонные новинки и насладиться отличным вкусом
             наших бургеров. Готовим для вас лучшие бургеры в городе из отборной мраморной говядины.</p>
           <div class="main-action">
-            <button class="button">Смотреть меню</button>
+            <button id="showMenuBtn" class="button">Смотреть меню</button>
           </div>
         </div>
         <img src="assets/images/burger.png" alt="Big burger" class="main-image">
@@ -74,7 +74,7 @@
     </main>
   </section>
 
-  <section class="why">
+  <section class="why" id="why">
     <div class="container why__container">
       <h2 class="why__title">почему нас выбирают?</h2>
 
@@ -101,7 +101,7 @@
     </div>
   </section>
 
-  <section class="products">
+  <section class="products" id="products">
     <div class="container products__container">
       <h2 class="products__title">выберите свой бургер</h2>
       <ul class="products__list card-list">
@@ -115,7 +115,7 @@
           </div>
           <div class="card-list__extra card-extra">
             <div class="card-extra__info">
-              <div class="card-extra__price">
+              <div class="card-extra__price" data-price="8">
                 <span>8</span>&nbsp;
                 <span>$</span>
               </div>
@@ -148,7 +148,7 @@
           </div>
           <div class="card-list__extra card-extra">
             <div class="card-extra__info">
-              <div class="card-extra__price">
+              <div class="card-extra__price" data-price="7">
                 <span>7</span>&nbsp;
                 <span>$</span>
               </div>
@@ -180,7 +180,7 @@
             бекон, красный лук, соус бургер, горчица</div>
           <div class="card-list__extra card-extra">
             <div class="card-extra__info">
-              <div class="card-extra__price">
+              <div class="card-extra__price" data-price="10">
                 <span>10</span>&nbsp;
                 <span>$</span>
               </div>
@@ -212,7 +212,7 @@
             барбекю, соус сырный, салат айсберг</div>
           <div class="card-list__extra card-extra">
             <div class="card-extra__info">
-              <div class="card-extra__price">
+              <div class="card-extra__price" data-price="7">
                 <span>7</span>&nbsp;
                 <span>$</span>
               </div>
@@ -244,7 +244,7 @@
             сыр, сырный соус, кетчуп, зелень</div>
           <div class="card-list__extra card-extra">
             <div class="card-extra__info">
-              <div class="card-extra__price">
+              <div class="card-extra__price" data-price="8">
                 <span>8</span>&nbsp;
                 <span>$</span>
               </div>
@@ -276,7 +276,7 @@
             лук, кетчуп, соус сырный, горчица, зелень</div>
           <div class="card-list__extra card-extra">
             <div class="card-extra__info">
-              <div class="card-extra__price">
+              <div class="card-extra__price" data-price="9">
                 <span>9</span>&nbsp;
                 <span>$</span>
               </div>
@@ -308,7 +308,7 @@
             барбекю, соус сырный, салат айсберг</div>
           <div class="card-list__extra card-extra">
             <div class="card-extra__info">
-              <div class="card-extra__price">
+              <div class="card-extra__price" data-price="8">
                 <span>8</span>&nbsp;
                 <span>$</span>
               </div>
@@ -340,7 +340,7 @@
             красный лук, сыр, перец халапеньо, кетчуп, зелень</div>
           <div class="card-list__extra card-extra">
             <div class="card-extra__info">
-              <div class="card-extra__price">
+              <div class="card-extra__price" data-price="7">
                 <span>7</span>&nbsp;
                 <span>$</span>
               </div>
@@ -372,7 +372,7 @@
             маринованный, криспи лук, кетчуп, соус сырный, горчица, зелень</div>
           <div class="card-list__extra card-extra">
             <div class="card-extra__info">
-              <div class="card-extra__price">
+              <div class="card-extra__price" data-price="11">
                 <span>11</span>&nbsp;
                 <span>$</span>
               </div>
@@ -404,7 +404,7 @@
             барбекю, соус сырный, салат айсберг, свежий томат</div>
           <div class="card-list__extra card-extra">
             <div class="card-extra__info">
-              <div class="card-extra__price">
+              <div class="card-extra__price" data-price="9">
                 <span>9</span>&nbsp;
                 <span>$</span>
               </div>
@@ -436,7 +436,7 @@
             огурец маринованный, сыр, горчичный соус, кетчуп, зелень</div>
           <div class="card-list__extra card-extra">
             <div class="card-extra__info">
-              <div class="card-extra__price">
+              <div class="card-extra__price" data-price="8">
                 <span>8</span>&nbsp;
                 <span>$</span>
               </div>
@@ -468,7 +468,7 @@
             томат, кетчуп, двойной сыр чеддар, горчица, зелень</div>
           <div class="card-list__extra card-extra">
             <div class="card-extra__info">
-              <div class="card-extra__price">
+              <div class="card-extra__price" data-price="9">
                 <span>9</span>&nbsp;
                 <span>$</span>
               </div>
@@ -495,7 +495,7 @@
     </div>
   </section>
 
-  <section class="order">
+  <section class="order" id="order">
     <div class="container order__container">
       <h2 class="order__title">оформление заказа</h2>
       <img src="assets/images/order_image.png" alt="" class="order__image">
@@ -506,16 +506,16 @@
         </div>
         <div class="order-form__inputs">
           <div class="order-form__input">
-            <input type="text" placeholder="Ваш заказ" />
+            <input type="text" placeholder="Ваш заказ" id="burger"/>
           </div>
           <div class="order-form__input">
-            <input type="text" placeholder="Ваше имя" />
+            <input type="text" placeholder="Ваше имя" id="name"/>
           </div>
           <div class="order-form__input">
-            <input type="text" placeholder="Ваш телефон" />
+            <input type="text" placeholder="Ваш телефон" id="phone"/>
           </div>
 
-          <button class="button">
+          <button class="button" type="submit">
             <span>Оформить заказ</span>
           </button>
         </div>
